@@ -7,7 +7,7 @@ title: Service Level Agreement
 
 # Service Level Agreement (SLA)
 
-*Effective: {{ siService Level Agreement (SLA) for Maple Data Services
+*Effective: {{ site.year }}*
 # Introduction
 This Service Level Agreement (SLA) outlines the terms and conditions governing the services provided by Maple Data Services (MDS), specifically focusing on Storage, Virtualization, and Availability. MDS is committed to ensuring high availability and reliability of its services while maintaining transparency with its clients regarding maintenance periods and unexpected downtime.
 
