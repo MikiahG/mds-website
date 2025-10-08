@@ -7,75 +7,27 @@ title: Service Level Agreement
 
 # Service Level Agreement (SLA)
 
-*Effective: {{ site.year }}*
+*Effective: {{ siService Level Agreement (SLA) for Maple Data Services
+# Introduction
+This Service Level Agreement (SLA) outlines the terms and conditions governing the services provided by Maple Data Services (MDS), specifically focusing on Storage, Virtualization, and Availability. MDS is committed to ensuring high availability and reliability of its services while maintaining transparency with its clients regarding maintenance periods and unexpected downtime.
 
-## Service Overview
+# Availability Commitment
+MDS implements a 3 tier approach for availability
+## Normal operations
+MDS aims for maximum uptime for its services. The standard availability commitment is 99.99% per calendar month (also known as "four nines"), meaning that downtime should not exceed a total of approximately 5 minutes in a given month.
+#### Scheduled Maintenance:
+MDS will schedule maintenance activities during low-usage periods and publish any planned maintenance windows at least 48 hours in advance. Any changes to these schedules will also be communicated with the same advanced notice.
 
-This Service Level Agreement ("SLA") describes the level of service you can expect from our hobby project. While this is a personal project provided on a best-effort basis, we strive to maintain consistent service quality.
+#### Unexpected Downtime:
+If unplanned downtime occurs, an automated system will notify affected users within one hour if they have enrolled in this service notification feature.
+MDS will work to bring the service up as quickly as possible. If the services are down for a period greater than 3 days the case will be moved to the degraded service category
 
-## Service Availability
+## Degraded services
+If unplanned downtime happens MDS will strive to reestablish service within 1 week providing details to customers on the timeline of service restoration
 
-### Uptime Target
-- **Target**: 99.5% uptime on a monthly basis
-- **Monitoring**: Real-time monitoring available through our uptime monitor
-- **Measurement Period**: Monthly, calculated from the first to the last day of each calendar month
-
-### Planned Maintenance
-- Scheduled maintenance will be announced at least 24 hours in advance when possible
-- Emergency maintenance may be performed without advance notice
-- Maintenance windows are typically scheduled during low-usage periods
-
-## Service Performance
-
-### Response Times
-- **Website Loading**: Target of under 3 seconds for initial page load
-- **API Responses** (if applicable): Target of under 500ms for standard requests
-
-### Support Response
-As this is a hobby project:
-- **General Inquiries**: Best effort response within 7 days
-- **Critical Issues**: Best effort response within 48 hours
-- **Support Channels**: Project repository issues, email, or website contact form
-
-## Service Limitations
-
-### Disclaimer
-This is a hobby project provided "as-is" without warranties. Service levels are targets, not guarantees.
-
-### Capacity Limits
-- Service may be subject to reasonable usage limits
-- Excessive usage may result in temporary restrictions
-
-### Dependencies
-- Service availability depends on third-party services and hosting providers
-- We are not liable for outages caused by external dependencies
-
-## Incident Response
-
-### Monitoring
-- Automated monitoring tracks service availability and performance
-- Incidents are typically detected within 5 minutes
-
-### Communication
-- Status updates will be provided for significant outages
-- Post-incident reports may be published for major issues
-
-## Data and Backup
-
-### Data Retention
-- User data is retained according to our Privacy Policy
-- Regular backups are performed, but recovery is not guaranteed
-
-### Data Loss
-- While we implement reasonable backup procedures, data loss is possible
-- Users are encouraged to maintain their own backups when applicable
-
-## Changes to This SLA
-
-We reserve the right to modify this SLA at any time. Material changes will be announced through our usual communication channels.
-
-## Contact
-
-For questions about this SLA or to report service issues, please use our standard support channels mentioned above.
+If the services are down for more than 7 calendar days you as the user are eligible to apply for your money back. Restitution will be granted up to the entirely of a value of a month 
+If service cannot be restored the case will be moved to catastrophic failure.
+## Catastrophic failure 
+MDS will take appropriate cautions to avoid catastrophic failures if possible. Understand that no matter the precautions taken no one can perfectly protect and house data. If a catastrophic failures were to take place MDS would take reasonable actions to restore data if possible. Understand that MDS is not infallible. If you value your data always have a backup in another location.
 
 </div>
