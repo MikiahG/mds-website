@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="/">{{ site.title }}</a></h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/privacy/">Privacy Policy</a></li>
+                <li><a href="/sla/">SLA</a></li>
+                {% if site.uptime_monitor_url %}
+                <li><a href="{{ site.uptime_monitor_url }}" target="_blank" rel="noopener">Uptime Monitor</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.year or "new Date().getFullYear()" }} {{ site.title }}. All rights reserved.</p>
+        {% if site.uptime_monitor_embed %}
+        <div class="uptime-monitor">
+            {{ site.uptime_monitor_embed | safe }}
+        </div>
+        {% endif %}
+    </footer>
+</body>
+</html>
