@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
+    <script>
+      // Set theme ASAP to avoid FOUC
+      (function() {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored || (prefersDark ? 'dark' : 'light');
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {
+          // no-op
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -17,6 +30,11 @@
                 {% if site.uptime_monitor_url %}
                 <li><a href="{{ site.uptime_monitor_url }}" target="_blank" rel="noopener">Uptime Monitor</a></li>
                 {% endif %}
+                <li>
+                  <button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span id="theme-toggle-icon" aria-hidden="true">🌙</span>
+                  </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,5 +51,7 @@
         </div>
         {% endif %}
     </footer>
+
+    <script src="/assets/theme.js" defer></script>
 </body>
 </html>
