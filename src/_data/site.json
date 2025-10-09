@@ -2,5 +2,7 @@
   "title": "Maple Data Services",
   "year": "2025",
   "uptime_monitor_url": "https://example.com/uptime-monitor",
-  "uptime_monitor_embed": "<p><!-- Replace with your uptime monitor embed code --></p>"
+  "uptime_monitor_embed": "<p><!-- Replace with your uptime monitor embed code --></p>",
+  "portal_url": "https://billing.stripe.com/p/login/00w7sL1JD4RCfq5d7D83C00",
+  "portal_label": "Customer Portal"
 }
